@@ -51,9 +51,8 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
     artifact-name: charybdis_left_standalone
 
-  # --- Diagnostic build with USB logging (dongle) ---
+  # --- Diagnostic build with USB logging (dongle, no studio snippet) ---
   - board: nice_nano/nrf52840/zmk
     shield: charybdis_dongle
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_USB_LOGGING=y
+    cmake-args: -DCONFIG_ZMK_USB=y -DCONFIG_ZMK_USB_LOGGING=y -DCONFIG_LOG=y
     artifact-name: charybdis_dongle_log
