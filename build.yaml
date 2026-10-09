@@ -40,3 +40,13 @@ include:
     shield: charybdis_left
   - board: nice_nano/nrf52840/zmk
     shield: charybdis_right
+
+  # --- Standalone (no-dongle) diagnostic builds: half acts as central over USB ---
+  - board: nice_nano/nrf52840/zmk
+    shield: charybdis_right
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    artifact-name: charybdis_right_standalone
+  - board: nice_nano/nrf52840/zmk
+    shield: charybdis_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    artifact-name: charybdis_left_standalone
