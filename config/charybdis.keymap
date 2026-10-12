@@ -134,8 +134,6 @@
 
   combos {
     compatible = "zmk,combos";
-    timeout-ms = <20>;
-    require-prior-idle-ms = <250>;
 
     // Х (в русской раскладке) = O + P
     combo_russian_x_letter {
