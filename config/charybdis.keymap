@@ -44,6 +44,8 @@
 / {
   behaviors {
     hml: hml {
+      // 1-й параметр = модификатор (hold), 2-й = буква (tap)
+      display-name = "Home Row Mod - Left";
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "balanced";
@@ -58,6 +60,8 @@
     };
 
     hmr: hmr {
+      // 1-й параметр = модификатор (hold), 2-й = буква (tap)
+      display-name = "Home Row Mod - Right";
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "balanced";
@@ -71,6 +75,8 @@
         <&kp>;
     };
     hml_s: hml_s {
+      // как "Left", но срабатывает модом сразу после печати (без задержки 250 мс)
+      display-name = "Home Row Mod - Left (no idle)";
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "balanced";
@@ -85,6 +91,8 @@
     };
 
     hmr_s: hmr_s {
+      // 1-й параметр = модификатор (hold), 2-й = буква (tap)
+      display-name = "Home Row Mod - Right (no idle)";
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "balanced";
@@ -100,6 +108,7 @@
 
 
     smart_shift: smart_shift {
+      display-name = "Smart Shift (Shift / Caps Word)";
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
       bindings = <&sk LSHIFT>, <&caps_word>;
