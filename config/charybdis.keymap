@@ -177,7 +177,8 @@
 
     // ---------------------------------------------------------------------
     // BASE — перенос старой раскладки.
-    // Home row mods: A S D F / J K L ;  (новые hml/hmr)
+    // Home row mods: A S D F = Shift Ctrl Opt Cmd   (зеркально)
+    //                   J K L ; = Cmd Opt Ctrl Shift
     // &lt 4 Z и &lt 4 SLASH — удержание даёт слой FUNCTION (настройки)
     // &lt 2 TAB — удержание даёт SYMBOL, &lt 3 BACKSPACE — NUMBER
     // ---------------------------------------------------------------------
@@ -187,7 +188,7 @@
         bindings = <
 &trans  &trans        &trans        &trans         &trans         &trans          &trans        &trans         &trans         &trans          &trans           &trans
 &trans  &kp Q         &kp W         &kp E          &kp R          &kp T           &kp Y         &kp U          &kp I          &kp O           &kp P            &trans
-&trans  &hml LCTRL A  &hml LALT S   &hml LGUI D    &hml LSHIFT F  &kp G           &kp H         &hmr RSHIFT J  &hmr RGUI K    &hmr RALT L     &hmr RCTRL SEMI  &trans
+&trans  &hml LSHIFT A  &hml LCTRL S   &hml LALT D    &hml LGUI F  &kp G           &kp H         &hmr RGUI J  &hmr RALT K    &hmr RCTRL L     &hmr RSHIFT SEMI  &trans
 &trans  &lt 4 Z       &kp X         &kp C          &kp V          &kp B           &kp N         &kp M          &kp COMMA      &kp DOT         &lt 4 SLASH      &trans
         &kp ESC       &kp SPACE     &lt 2 TAB      &kp DEL        &kp BACKSPACE   &lt 3 BACKSPACE  &kp SPACE                   &kp RETURN
         >;
@@ -203,7 +204,7 @@
         bindings = <
 &trans  &trans    &trans    &trans      &trans      &trans          &trans  &trans    &trans    &trans    &trans  &trans
 &trans  &trans    &trans    &trans      &trans      &trans          &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &kp LGUI  &kp LALT  &kp LSHFT   &kp LCTRL   &trans          &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans  &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &trans          &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
 &trans  &trans    &trans    &trans      &trans      &trans          &trans  &trans    &trans    &trans    &trans  &trans
         &mkp MB1  &mkp MB2  &mkp MB3     &trans      &trans          &trans  &trans    &trans
         >;
